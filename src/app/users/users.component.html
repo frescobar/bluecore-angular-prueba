@@ -1,0 +1,14 @@
+<h1>Usuarios</h1>
+
+<div *ngIf="users.length > 0">
+    <ul>
+      <li *ngFor="let user of users">
+        <span>{{ user.name }}</span>
+        <span>Email: {{ user.email }}</span>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="users.length === 0">
+    <p>No users found.</p>
+  </div>
+  
